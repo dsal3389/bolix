@@ -1,0 +1,56 @@
+
+#home-banner{
+    display: block;
+    right: 0;
+    height: 500px;
+    width: 100%;
+}
+
+#home-banner img{
+    position: absolute;
+    object-fit: cover;
+}
+
+#bg-img{
+    right: 0;
+    z-index: -1;
+}
+
+#dollar-img{
+    width: 250px;
+    right: 18%;
+    top: 320px;
+    animation: space-float 2s ease-in-out 2s infinite alternate;
+}
+
+#shield-img{
+    right: 14%;
+    width: 120px;
+    top: 360px;
+    animation: space-float 2.2s ease-in-out 2s infinite alternate;
+}
+
+#banner-text{
+    float: right;
+    color: white;
+    margin: 0 48px 0 16px;
+}
+
+#banner-text h1{
+    color: #fff;
+    text-align: center
+}
+
+#sections{
+    margin: 12px 22px;
+    text-align: center;
+}
+
+#sections section{
+    max-width: 800px;
+    margin: 16px auto;
+}
+
+@keyframes space-float{
+    100%{transform: translateY(-30px);}
+}

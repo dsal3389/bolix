@@ -1,0 +1,101 @@
+
+/* global styles define here */
+
+/*
+    primary {
+        Dark #002171
+        Default #0d47a1
+        Light #5472d3
+    }
+
+    accent {
+        Dark #ff6090
+        Default #e91e63
+        Light #b0003a
+    }
+
+    warn {
+        Dark #9a0007
+        Default #d32f2f
+        Light #ff6659
+    }
+*/
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a{
+    color: lightblue;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #333;
+}
+
+.primary-dark{
+    background-color: #0a328f;
+    color: white;
+}
+
+.primary{
+    background-color: #0d47a1;
+    color: white;
+}
+
+.primary-light{
+    background-color: #5472d3;
+    color: white;
+}
+
+.accent-light{
+    background-color: #ff6090;
+    color: white;
+}
+
+.accent{
+    background-color: #e91e63;
+    color: white;
+}
+
+.accent-dark{
+    background-color: #b0003a;
+    color: white;
+}
+
+.m-shd-l1{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.m-shd-l2{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.m-shd-l3{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.rounded-btn{
+    padding: 6px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.header-l1{
+    font-size: 23px;
+}
+
+.header-l2{
+    font-size: 32px;
+}
+
+.header-l3{
+    font-size: 48px;
+}
+
+.card{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
