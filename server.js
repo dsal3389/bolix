@@ -2,7 +2,7 @@ const fs = require('fs');
 const http = require('http');
 
 
-const frontendPath = '../frontend';
+const frontendPath = 'frontend';
 const port = 8080;
 
 
