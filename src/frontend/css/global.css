@@ -24,11 +24,12 @@
 body{
     margin: 0;
     overflow-x: hidden;
-    font-family: Arial
+    font-family: Arial;
+    scroll-behavior: smooth;
 }
 
 a{
-    color: lightblue;
+    color: #7ec0f7;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -38,6 +39,12 @@ h1, h2, h3, h4, h5, h6{
 button, .btn, .rounded-btn{
 	font-weight: 700;
 	font-size: 18px
+}
+
+hr{
+    margin: 20px -16px;
+    border: 0;
+    border-top: 1px solid #eee;
 }
 
 .primary-dark{
@@ -74,7 +81,7 @@ button, .btn, .rounded-btn{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.m-shd-l2{
+.m-shd-l2, .active-card:hover{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -104,4 +111,17 @@ button, .btn, .rounded-btn{
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    min-width: 300px;
+    box-sizing: border-box;
+    transition-duration: 250ms;
+}
+
+.content{
+    padding: 30px;
+}
+
+@media(max-width: 600px){
+    .content, .card{
+        padding: 16px;;
+    }
 }

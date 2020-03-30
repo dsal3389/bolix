@@ -5,11 +5,18 @@
     top: 0;
     padding: 0 16px;
     z-index: 10000;
+    position: fixed;
+    height: 61px;
+    transition-duration: 300ms;
 }
 
-#main-nav h1{
+#nav-header{
     margin: 12px 0;
-    color: #fff;
+}
+
+#nav-header a{
+    text-decoration: none;
+    color: #333;
 }
 
 #nav-links{
@@ -19,9 +26,21 @@
 
 #nav-links a{
     margin-left: 16px;
-    color: white;
     text-decoration: none;
     padding: 6px;
     border-radius: 4px;
     transition-duration: 120ms;
+    color: #333;
+}
+
+.nav-active > #nav-header a, .nav-active > #nav-links a{
+    color: #fff;
+}
+
+main{
+    position: absolute;
+    top: 61px;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
