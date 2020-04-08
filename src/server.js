@@ -26,7 +26,7 @@ getContentTypeFor = (type) => {
         
         default:
             return 'text/html';
-    }
+    };
 }
 
 get404Response = (req, res) => {
@@ -58,5 +58,5 @@ http.createServer((req, res) => {
     
     res.writeHeader(200, {"Content-Type": getContentTypeFor(urlPrefix)});
     getResponse(req, res, path);
-}).listen(port)
+}).listen(port);
 console.log(`[ INIT ] server started running on localhost:${port}`);

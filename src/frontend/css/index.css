@@ -4,6 +4,7 @@
     width: 100%;
     top: 0;
     padding: 0 16px;
+    box-sizing: border-box;
     z-index: 10000;
     position: fixed;
     height: 61px;
@@ -19,11 +20,6 @@
     color: #333;
 }
 
-#nav-links{
-    display: flex;
-    align-items: center;
-}
-
 #nav-links a{
     margin-left: 16px;
     text-decoration: none;
@@ -31,6 +27,16 @@
     border-radius: 4px;
     transition-duration: 120ms;
     color: #333;
+}
+
+#auth-btns a{
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.center-btns{
+    display: flex;
+    align-items: center;
 }
 
 .nav-active > #nav-header a, .nav-active > #nav-links a{

@@ -1,0 +1,10 @@
+
+#login-card{
+    max-width: 600px;
+    margin: 24px auto;
+}
+
+#login-card h2{
+    margin-top: 0;
+    text-align: center;
+}

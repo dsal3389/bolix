@@ -21,6 +21,15 @@
     }
 */
 
+:root{
+    --primary-dark: #0a328f;
+    --primary: #0d47a1;
+    --primary-light: #5472d3;
+    --accent-dark: #b0003a;
+    --accent: #e91e63;
+    --accent-light: #ff6090;
+}
+
 body{
     margin: 0;
     overflow-x: hidden;
@@ -36,9 +45,11 @@ h1, h2, h3, h4, h5, h6{
     color: #333;
 }
 
-button, .btn, .rounded-btn{
-	font-weight: 700;
-	font-size: 18px
+button, .btn, .rounded-btn, .block-btn{
+	font-weight: 600;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
 }
 
 hr{
@@ -48,32 +59,32 @@ hr{
 }
 
 .primary-dark{
-    background-color: #0a328f;
+    background-color: var(--primary-dark);
     color: white;
 }
 
 .primary{
-    background-color: #0d47a1;
+    background-color: var(--primary);
     color: white;
 }
 
 .primary-light{
-    background-color: #5472d3;
+    background-color: var(--primary-light);
     color: white;
 }
 
 .accent-light{
-    background-color: #ff6090;
+    background-color: var(--accent-light);
     color: white;
 }
 
 .accent{
-    background-color: #e91e63;
+    background-color: var(--accent);
     color: white;
 }
 
 .accent-dark{
-    background-color: #b0003a;
+    background-color: var(--accent-dark);
     color: white;
 }
 
@@ -87,6 +98,12 @@ hr{
 
 .m-shd-l3{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.block-btn{
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 6px 12px;
 }
 
 .rounded-btn{
@@ -107,6 +124,29 @@ hr{
     font-size: 48px;
 }
 
+.m-input input{
+    border-radius: 0;
+    border: 0;
+    transition-duration: 150ms;
+    outline: none;
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+.underline input{
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+}
+
+.underline input:focus{ 
+    border-bottom-width: 4px;
+    border-color: var(--primary);
+}
+
+.underline input:focus .underline{
+    border-bottom-width: 4px;
+}
+
 .card{
     padding: 30px;
     border-radius: 5px;
@@ -114,6 +154,14 @@ hr{
     min-width: 300px;
     box-sizing: border-box;
     transition-duration: 250ms;
+}
+
+.spacer{
+    flex: 1;
+}
+
+.full-width{
+    width: 100%;
 }
 
 .content{
