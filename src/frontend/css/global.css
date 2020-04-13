@@ -164,6 +164,18 @@ hr{
     width: 100%;
 }
 
+.banner-img{
+    width: 100%;
+    max-height: 170px;
+    object-fit: cover;
+    transition-duration: 150ms;
+    filter: blur(3px);
+}
+
+.banner-img:hover{
+    filter: blur(0);
+}
+
 .content{
     padding: 30px;
 }

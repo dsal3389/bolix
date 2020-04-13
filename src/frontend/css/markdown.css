@@ -30,3 +30,22 @@
     white-space: pre;
 }
 
+.markdown table{
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.markdown th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.markdown th{
+    background-color: var(--primary-light);
+    color: white;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
