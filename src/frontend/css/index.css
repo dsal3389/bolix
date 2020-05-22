@@ -43,6 +43,20 @@
     color: #fff;
 }
 
+.bg-images{
+    z-index: -1;
+    position: absolute;
+    top: 220px
+}
+
+#left{
+    left: 0;
+}
+
+#right{
+    right: 0;
+}
+
 main{
     position: absolute;
     top: 61px;
@@ -50,3 +64,4 @@ main{
     right: 0;
     left: 0;
 }
+

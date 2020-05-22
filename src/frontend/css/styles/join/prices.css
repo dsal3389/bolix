@@ -1,0 +1,43 @@
+
+#prices-layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#prices-layout .card{
+    margin: 4px 8px;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+#prices-layout .card img{
+    position: relative;
+    margin-top: -30px;
+}
+
+.price-header{
+    position: absolute;
+    top: 80px;
+    left: 30px;
+}
+
+.price-content{
+    height: 150px;
+    overflow: auto;
+}
+
+.price-content ul{
+    color: var(--primary-dark);
+}
+
+.join-btn{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.join-btn a{
+    color: white !important;
+    text-decoration: none !important;
+}

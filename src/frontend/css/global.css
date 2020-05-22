@@ -88,17 +88,12 @@ hr{
     color: white;
 }
 
-.m-shd-l1{
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
+.m-shd-l1{ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+.m-shd-l2, .active-card:hover{ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
+.m-shd-l3{ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
 
-.m-shd-l2, .active-card:hover{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.m-shd-l3{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
+.mw-1080{ max-width: 1080px; }
+.mw-1280{ max-width: 1280px; }
 
 .block-btn{
     border-radius: 5px;
@@ -134,8 +129,9 @@ hr{
 }
 
 .underline input{
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     padding-bottom: 4px;
+    color: gray;
 }
 
 .underline input:focus{ 
@@ -154,6 +150,9 @@ hr{
     min-width: 300px;
     box-sizing: border-box;
     transition-duration: 250ms;
+    position: relative;
+    display: block;
+    background-color: #fefefe;
 }
 
 .spacer{
@@ -168,20 +167,22 @@ hr{
     width: 100%;
     max-height: 170px;
     object-fit: cover;
-    transition-duration: 150ms;
-    filter: blur(3px);
-}
-
-.banner-img:hover{
-    filter: blur(0);
 }
 
 .content{
     padding: 30px;
 }
 
+.card-content{
+    margin: 0 -30px;
+}
+
 @media(max-width: 600px){
     .content, .card{
         padding: 16px;;
+    }
+
+    .card-content{
+        margin: 0 -16px;
     }
 }

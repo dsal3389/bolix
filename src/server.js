@@ -34,7 +34,7 @@ get404Response = (req, res) => {
     const path = getFilePath('/html/pages/404.html');
     fs.readFile(path, (err, content) => {
         res.writeHeader(404, {"Content-Type": "text/html"});
-        res.write(`not found ${path}`);
+        res.write(content);
         res.end();
     });
     console.warn(`[ ERR 404 HTML ] not found ${req.url}`);
