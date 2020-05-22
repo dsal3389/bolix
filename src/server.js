@@ -11,7 +11,7 @@ getFilePath = (file) => {
     const prefix = file.split('/')[1];
 
     if(prefix == '')
-        return frontendPath +'/html' +'/' +'index' +'.html';
+        return frontendPath +'/html/index.html';
     return frontendPath +file;
 }
 

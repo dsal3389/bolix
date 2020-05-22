@@ -129,18 +129,36 @@ hr{
 }
 
 .underline input{
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid gray;
     padding-bottom: 4px;
     color: gray;
 }
 
 .underline input:focus{ 
-    border-bottom-width: 4px;
+    border-bottom-width: 2px;
     border-color: var(--primary);
 }
 
 .underline input:focus .underline{
-    border-bottom-width: 4px;
+    border-bottom-width: 2px;
+}
+
+.outline{
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    transition-duration: 250ms;
+    color: #333;
+}
+
+.outline input{
+    padding: 2px 6px;
+    box-sizing: border-box;
+}
+
+.active-outline{
+    border: 3px solid #ccc !important;
 }
 
 .card{
