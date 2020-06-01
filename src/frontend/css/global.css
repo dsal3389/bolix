@@ -47,8 +47,8 @@ h1, h2, h3, h4, h5, h6{
 
 button, .btn, .rounded-btn, .block-btn{
 	font-weight: 600;
-    font-size: 16px;
-    border: 0;
+    font-size: 12px;
+    border: 5px;
     cursor: pointer;
 }
 
@@ -98,12 +98,12 @@ hr{
 .block-btn{
     border-radius: 5px;
     text-decoration: none;
-    padding: 6px 12px;
+    padding: 8px 16px;
 }
 
 .rounded-btn{
-    padding: 6px 12px;
-    border-radius: 50px;
+    padding: 8px 16px;
+    border-radius: 50px !important;
     text-decoration: none;
 }
 
@@ -120,7 +120,7 @@ hr{
 }
 
 .m-input input{
-    border-radius: 0;
+    border-radius: 4px;
     border: 0;
     transition-duration: 150ms;
     outline: none;
@@ -131,6 +131,7 @@ hr{
 .underline input{
     border-bottom: 2px solid gray;
     padding-bottom: 4px;
+    border-radius: 0;
     color: gray;
 }
 
@@ -147,21 +148,22 @@ hr{
     background-color: transparent;
     border: 1px solid #ccc;
     border-radius: 4px;
+    color: gray;
     overflow: hidden;
     transition-duration: 250ms;
-    color: #333;
 }
 
 .outline input{
     padding: 2px 6px;
     box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .active-outline{
     border: 3px solid #ccc !important;
 }
 
-.card{
+.card, .card-outline{
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -171,6 +173,12 @@ hr{
     position: relative;
     display: block;
     background-color: #fefefe;
+}
+
+.card-outline{
+    border: 1px solid #ccc;
+    background-color: #00000004;
+    box-shadow: unset;
 }
 
 .spacer{
@@ -185,6 +193,10 @@ hr{
     width: 100%;
     max-height: 170px;
     object-fit: cover;
+}
+
+.help-text{
+    color: gray;
 }
 
 .content{

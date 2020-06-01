@@ -1,0 +1,18 @@
+
+
+#register-wrapper{
+    margin: 8px;
+}
+
+#register-card{
+    max-width: 700px;
+    margin: 60px auto;
+}
+
+#register-card h1{
+    text-align: center;
+}
+
+form .form-field{
+    margin-bottom: 12px;
+}

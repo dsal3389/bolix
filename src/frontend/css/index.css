@@ -31,7 +31,8 @@
 
 #auth-btns a{
     margin-left: 8px;
-    font-size: 14px;
+    font-size: 12px;
+    color: #333;
 }
 
 .center-btns{
@@ -39,7 +40,7 @@
     align-items: center;
 }
 
-.nav-active > #nav-header a, .nav-active > #nav-links a{
+.nav-active > #nav-header a, .nav-active > #nav-links a, .nav-active > #auth-btns a{
     color: #fff;
 }
 

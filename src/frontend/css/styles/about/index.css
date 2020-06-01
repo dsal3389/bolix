@@ -18,13 +18,13 @@
     margin: auto;
 }
 
-.cards-container .card{
+.cards-container .card, .card-outline{
     cursor: pointer;
     padding: 16px;
     margin: 8px 0;
 }
 
-.cards-container .card a{
+.cards-container .card a, .cards-container .card-outline a{
     color: #333;
     text-decoration: none;
     width: 100%;
@@ -40,6 +40,6 @@
     display: none;
 }
 
-.cards-container .card:hover .dot{
+.cards-container .card:hover, .dot{
     display: block;
 }

@@ -59,4 +59,4 @@ http.createServer((req, res) => {
     res.writeHeader(200, {"Content-Type": getContentTypeFor(urlPrefix)});
     getResponse(req, res, path);
 }).listen(port);
-console.log(`[ INIT ] server started running on localhost:${port}`);
+console.log(`[ INIT ] server started running on http://localhost:${port}`);

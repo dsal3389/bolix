@@ -55,13 +55,12 @@
 #cross{
     padding: 30px 16px;
     background-color: var(--primary-light);
-    transition-duration: 250ms;
-    transform: rotate(3deg) translateX(-7px);
     width: calc(100% + 40px);
 }
 
 #cross h1{
     text-align: center;
+    color: #fefefe !important;
 }
 
 @keyframes space-float{

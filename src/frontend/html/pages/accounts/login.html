@@ -1,16 +1,22 @@
 <div>
     <link rel="stylesheet" type="text/css" href="css/styles/accounts/login.css">
-    <div id='login-card' class='card'>
-        <h2>LOGIN</h2>
-        <form action='login' method='POST'>
-            <div class='inp-container m-input outline'>
-                <input placeholder='example@gmail.com' class='full-width'>
-            </div>
-            <div class='inp-container m-input outline'>
-                <input placeholder='password' type='password' class='full-width'>
-            </div>
-            <button type='submit' id='login-btn' class='block-btn outline primary-light'>LOGIN</button>
-        </form>
-    </div>
+    <div id="login-wrapper">
+        <div id='login-card' class='card'>
+            <h2>LOGIN</h2>
+            <form action='#' method='POST' onsubmit="alert('this is a demo website with no DATABASE!')">
+                <div class='inp-container m-input outline'>
+                    <input placeholder='example@gmail.com' class='full-width'>
+                </div>
+                <div class='inp-container m-input outline'>
+                    <input placeholder='password' type='password' class='full-width'>
+                </div>
+                <button type='submit' id='login-btn' class='block-btn outline full-width'>LOGIN</button>
+            </form>
+            <div id="links">
+                <a href="#" link="accounts/register">create user</a>
+                <a href="#" link="accounts/register">forgot my password</a>
+            </div>    
+        </div>
+    </div>    
     <script src='js/scripts/accounts/login.js'></script>
 </div>
